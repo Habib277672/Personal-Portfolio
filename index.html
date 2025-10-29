@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Animate.css -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER with Icons -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-darkblue sticky-top shadow"
+    >
+      <div class="container">
+        <a class="navbar-brand text-green fw-bold" href="#">Panda Coders</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                ><i class="bi bi-house-fill"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"
+                ><i class="bi bi-person-fill"></i> About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"
+                ><i class="bi bi-stars"></i> Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"
+                ><i class="bi bi-collection-fill"></i> Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services"
+                ><i class="bi bi-gear-fill"></i> Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                ><i class="bi bi-envelope-fill"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero d-flex align-items-center h-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 animate__animated animate__fadeInLeft">
+            <h5 class="subtitle">Frontend Web Developer</h5>
+            <h1 class="title">👋 Hi, I’m Habib — a Frontend Web Developer.</h1>
+            <p class="description">
+              I craft modern, responsive websites with clean code, creative
+              design, and a focus on user experience. I love turning ideas into
+              beautiful, interactive interfaces that work seamlessly across all
+              devices.
+            </p>
+            <a
+              href="#contact"
+              class="btn btn-green animate__animated animate__pulse animate__infinite"
+              >Hire Me</a
+            >
+          </div>
+          <div
+            class="col-lg-6 text-center animate__animated animate__fadeInRight"
+          >
+            <img
+              src="./assets/hero-img.png"
+              alt="Hero Image"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bubble bubble1"></div>
+      <div class="bubble bubble2"></div>
+      <div class="bubble bubble3"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center flex-md-row flex-column-reverse">
+          <div
+            class="col-md-6 animate__animated animate__fadeInLeft text-center text-md-start"
+          >
+            <h2>Why Hire Me 💻✨</h2>
+            <p>
+              I craft clean, responsive websites that look great and work fast
+              🚀. Detail-oriented, reliable, and always learning 🔍 — I turn
+              ideas into beautiful, user-friendly experiences. Let’s build
+              something awesome together! 🤝
+            </p>
+            <a href="#contact" class="btn btn-outline-green">Read More</a>
+          </div>
+          <div
+            class="col-md-6 text-center animate__animated animate__fadeInRight"
+          >
+            <img
+              src="./assets/about-img.png"
+              alt="About Image"
+              class="about-img rounded-circle"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills text-center">
+      <div class="container">
+        <h2 class="mb-5 animate__animated animate__fadeInUp">My Skills</h2>
+        <div class="row">
+          <div class="col-6 col-md-3 mb-4">
+            <div class="circle" data-percent="89">
+              <canvas width="120" height="120"></canvas>
+              <div class="label">HTML/CSS</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="circle" data-percent="85">
+              <canvas width="120" height="120"></canvas>
+              <div class="label">JavaScript</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="circle" data-percent="25">
+              <canvas width="120" height="120"></canvas>
+              <div class="label">React</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <div class="circle" data-percent="80">
+              <canvas width="120" height="120"></canvas>
+              <div class="label">My SQL</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (dynamic) -->
+    <section id="projects" class="projects text-center">
+      <div class="container">
+        <h2 class="mb-5 animate__animated animate__fadeInUp">My Projects</h2>
+        <div class="row">
+          <!-- JS will insert projects here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services text-center">
+      <div class="container">
+        <h2 class="mb-5 animate__animated animate__fadeInUp">
+          Services & Solutions
+        </h2>
+        <div class="row">
+          <div class="col-md-4 mb-4 animate__animated animate__fadeInUp">
+            <i class="bi bi-brush-fill icon-green"></i>
+            <h5>UI/UX Enhancements</h5>
+            <p>
+              I focus on smooth animations, easy navigation, and user-friendly
+              interfaces to keep visitors engaged.
+            </p>
+          </div>
+          <div
+            class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-1s"
+          >
+            <i class="bi bi-graph-up icon-green"></i>
+            <h5>Website Optimization</h5>
+            <p>
+              Fast load times, SEO best practices, and performance tweaks to
+              help your site stand out and rank better.
+            </p>
+          </div>
+          <div
+            class="col-md-4 mb-4 animate__animated animate__fadeInUp animate__delay-2s"
+          >
+            <i class="bi bi-phone-fill icon-green"></i>
+            <h5>Responsive Web Design</h5>
+            <p>
+              I create clean, modern designs that look amazing on all devices —
+              mobile, tablet, or desktop.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="text-center mb-4 animate__animated animate__fadeInUp">
+          Get In Touch
+        </h2>
+        <p class="text-center mb-5 animate__animated animate__fadeInUp">
+          Have a project or question? Let’s connect!
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form id="contactForm" class="animate__animated animate__fadeInUp">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-green">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <!-- Left Section: Brand / About -->
+        <div class="footer-section">
+          <h3 class="footer-title">Panda Coders</h3>
+          <p class="footer-text">
+            Creating modern, responsive, and high-performance web experiences.
+          </p>
+        </div>
+
+        <!-- Middle Section: Navigation Links -->
+        <div class="footer-section">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Section: Social Media -->
+        <div class="footer-section">
+          <h4 class="footer-heading">Follow Us</h4>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/pandacoders1"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@pandacoders"
+              target="_blank"
+              aria-label="You-Tube"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/panda_coders/"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/habibqureshi123/"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com/Habib277672"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 <span class="brand">Panda Coders</span>. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
